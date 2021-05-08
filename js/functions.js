@@ -26,6 +26,10 @@ const listItem = () => {
     }
 }
 
+/**
+ * Esta función busca un item en localStorage, lo elimina y enlista todos los elementos restantes.
+ * @param {String} nameItem El nombre del item localizado en el localStorage
+ */
 const deleteItemsLocalStorage = (nameItem) => {
     localStorage.removeItem(nameItem);
     listItem();
